@@ -1,3 +1,4 @@
+import Cookie from 'js-cookie'
 import { useState } from 'react';
 
 import Contador from '../contador'
@@ -9,12 +10,14 @@ import { Container, RemoverIcon } from './styled'
 
 
 export default function CarrinhoItem(props) {
+  
   const [produto, setProduto] = useState(props.info);
 
   
 
 
   function alterarQtd(qtd) {
+   
     setProduto({...produto, qtd });
 
     props.onUpdate(produto.id, qtd)
