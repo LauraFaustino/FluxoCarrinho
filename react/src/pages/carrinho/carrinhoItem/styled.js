@@ -34,7 +34,7 @@ const Container = styled.div`
 `
 
 const RemoverIcon = styled.img`
-  content: url('/assets/images/delete.svg')
+  content: url('https://925ph.csb.app/assets/images/delete.svg');
 `
 
 
